@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./master.css">
+</head>
+<body>
+    <div class="container">
+      <div id="overlay" class="overlay black hide"></div>
+      <div id="alert-box" class="alert-box hide"></div>
+      <header class="flex-and-center page-title">
+        Hit the circle
+      </header>
+      <section class="flex-and-center">
+        Test your skill how many circle can you hit?
+      </section>
+      <main>
+        <section class="score-box">
+          <span>Score</span>
+          <div id="score"></div>
+        </section>
+        <section class="flex-and-center game-area">
+          <div id="tile-box" class="tile-box">
+            <div id="game-overlay" class="overlay">
+              <div>
+                Please click on 'Play' to start the game
+              </div>
+            </div>
+            <div id="game"></div>
+          </div>
+        </section>
+        <section class="flex-and-center">
+          <button class="button primary-button" onclick="startGame()">Play</button>
+          <button class="button secondary-button" onclick="endGame()">Stop</button>
+        </section>
+      </main>
+      <section class="flex-and-center">
+        <ul class="instruction">
+          <div>Instruction</div>
+          <li>Click on the circle as they are selected randomly by the computer</li>
+          <li>1 point per hit, minus 1 per miss</li>
+        </ul>
+      </section>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
